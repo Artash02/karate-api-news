@@ -1,0 +1,4583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>news.checkGames</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-06-03 04:04:12 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:21]"><span>[1:21]</span> <span>1. Create Article, 2. Add Games, 3. Edit Games, 4. Delete Games, 5. Delete Created Article</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">news/checkGames.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Check Games Functionality</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:21]</span>
+                <span class="scenario-name">1. Create Article, 2. Add Games, 3. Edit Games, 4. Delete Games, 5. Delete Created Article</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>625</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def currentTimeStamp = function() { return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function(actionName) {
+  var dbUtils = Java.type(&#39;utils.DbUtils&#39;);
+  var payload = new dbUtils();
+  return payload.getPayload(actionName);
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def createArticlePayload = call payload &#39;create-article&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def addGamesPayload = call payload &#39;add-games&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def editGamesPayload = call payload &#39;edit-games&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def emptyGamesPayload = call payload &#39;empty-tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Create Article</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def userInfo = call read(&#39;file:src/test/java/helper/get-user-info.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">83</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.25.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.get-user-info</div>
+      </div>
+      <div class="time-cell passed">76</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url api_auth_host + &#39;/users?limit=10000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25.0.call.0.7">16:04:11.449 request:
+1 &gt; GET https://api-admins.priotix.xyz/users?limit=10000
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxODQ5LCJleHAiOjE2MjI3MjI0NDl9.alU6SSZd9NFLURQqdBxK7p4407Io8q7gIDEY134xxLo
+1 &gt; Host: api-admins.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:04:11.514 response time in milliseconds: 64
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 03 Jun 2021 12:04:11 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 36ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;total&quot;:38,&quot;adminList&quot;:[{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;Πορτοκάλι&quot;,&quot;createdAt&quot;:&quot;2020-04-07T15:31:39.573Z&quot;,&quot;created&quot;:&quot;2020-02-28T14:56:30.152Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5da4289b7a5adfca6a078a44&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;updated&quot;:&quot;2020-02-28T14:56:30.152Z&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-05-25T14:40:54.587Z&quot;},{&quot;lastName&quot;:&quot;Writer&quot;,&quot;firstName&quot;:&quot;Freelance&quot;,&quot;createdAt&quot;:&quot;2020-04-11T09:48:20.544Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e919264e966af0010b65b62&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e91927dd9189c0011c5c5e7&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;freelance-writer@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-13T07:42:33.832Z&quot;},{&quot;lastName&quot;:&quot;Editor&quot;,&quot;firstName&quot;:&quot;Chiefdd&quot;,&quot;createdAt&quot;:&quot;2020-04-11T09:50:18.340Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e9192dae966af0010b65b63&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e9192e1d9189c0011c5c5e8&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;chief-editor@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-13T22:23:15.760Z&quot;},{&quot;firstName&quot;:&quot;Staff&quot;,&quot;lastName&quot;:&quot;Editor&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:28:36.383Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920c54cbb6e600100dc0bf&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920d0258489b00100760a1&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Staff Editor&quot;,&quot;id&quot;:&quot;5e8357bf127df500106ffce1&quot;,&quot;slug&quot;:&quot;staff-editor&quot;}},&quot;email&quot;:&quot;staff-editor@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:30.776Z&quot;},{&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;Admin&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:29:31.318Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920c8bcbb6e600100dc0c0&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920ced58489b00100760a0&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;admin@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:09.766Z&quot;},{&quot;firstName&quot;:&quot;Staff&quot;,&quot;lastName&quot;:&quot;Writer&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:30:08.764Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-5,&quot;text&quot;:&quot;(UTC-06:00) Central Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920cb0cbb6e600100dc0c1&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920d0e58489b00100760a2&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Staff Writer&quot;,&quot;id&quot;:&quot;5e835838127df500106ffce2&quot;,&quot;slug&quot;:&quot;staff-writer&quot;}},&quot;email&quot;:&quot;staff-writer@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:42.699Z&quot;},{&quot;firstName&quot;:&quot;Seo&quot;,&quot;lastName&quot;:&quot;Manager&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:30:50.440Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920cdacbb6e600100dc0c2&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920d1958489b00100760a3&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;SEO Manager&quot;,&quot;id&quot;:&quot;5e835879127df500106ffce3&quot;,&quot;slug&quot;:&quot;seo-manager&quot;}},&quot;email&quot;:&quot;seo-manager@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:53.429Z&quot;},{&quot;lastName&quot;:&quot;Wynne&quot;,&quot;firstName&quot;:&quot;Jared&quot;,&quot;createdAt&quot;:&quot;2020-04-13T11:46:18.470Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-5,&quot;text&quot;:&quot;(UTC-06:00) Central Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e94510a513ed80010af3a5d&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e94511b58489b00100760a8&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;jwynne@winners.net&quot;,&quot;updatedAt&quot;:&quot;2020-04-13T12:11:56.993Z&quot;},{&quot;firstName&quot;:&quot;awd&quot;,&quot;lastName&quot;:&quot;aqwd&quot;,&quot;createdAt&quot;:&quot;2020-04-14T08:06:08.103Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5e956ef016b7680010996c8d&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e956ef858489b00100760a9&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;a@g.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-14T08:06:16.270Z&quot;},{&quot;firstName&quot;:&quot;awd&quot;,&quot;lastName&quot;:&quot;awd&quot;,&quot;createdAt&quot;:&quot;2020-04-14T11:37:21.007Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-06:00) Central America&quot;},&quot;id&quot;:&quot;5e95a07116b7680010996c8e&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e95a07958489b00100760aa&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Freelance Writer&quot;,&quot;id&quot;:&quot;5e850534dd465300109c0c8b&quot;,&quot;slug&quot;:&quot;freelance-writer&quot;}},&quot;email&quot;:&quot;awd@awd.org&quot;,&quot;updatedAt&quot;:&quot;2020-04-21T12:31:11.285Z&quot;},{&quot;lastName&quot;:&quot;Khachatryan&quot;,&quot;firstName&quot;:&quot;Felix&quot;,&quot;createdAt&quot;:&quot;2020-04-14T15:05:53.720Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e95d15116b7680010996c8f&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e95d16358489b00100760ab&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;felix@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-14T15:06:11.985Z&quot;},{&quot;firstName&quot;:&quot;awdawd&quot;,&quot;lastName&quot;:&quot;awdawd&quot;,&quot;createdAt&quot;:&quot;2020-04-15T15:28:02.214Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-06:00) Saskatchewan&quot;},&quot;id&quot;:&quot;5e97280216b7680010996c90&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;awd@awd.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-15T15:28:02.214Z&quot;},{&quot;lastName&quot;:&quot;Grigoryan&quot;,&quot;firstName&quot;:&quot;Davit&quot;,&quot;createdAt&quot;:&quot;2020-04-16T13:58:13.756Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e98647516b7680010996c91&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;davit@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-16T13:58:13.756Z&quot;},{&quot;firstName&quot;:&quot;narek0703&quot;,&quot;lastName&quot;:&quot;narek0703&quot;,&quot;createdAt&quot;:&quot;2020-04-22T09:53:50.233Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Tbilisi&quot;},&quot;id&quot;:&quot;5ea0142e6040c4001035dc23&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5ea0145d58489b00100760af&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;narek0703@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-22T09:54:37.858Z&quot;},{&quot;firstName&quot;:&quot;Test&quot;,&quot;lastName&quot;:&quot;ttest&quot;,&quot;createdAt&quot;:&quot;2020-05-07T09:05:02.505Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-06:00) Central America&quot;},&quot;id&quot;:&quot;5eb3cf3e75829a001098bec1&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5eb9ce3c8532340010f5d53f&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;test-me&quot;,&quot;id&quot;:&quot;5eb9cf948532340010f5d543&quot;,&quot;slug&quot;:&quot;test-me&quot;}},&quot;email&quot;:&quot;test@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-05-11T22:22:00.994Z&quot;},{&quot;firstName&quot;:&quot;admin&quot;,&quot;lastName&quot;:&quot;admin&quot;,&quot;createdAt&quot;:&quot;2020-06-10T13:33:25.614Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-7,&quot;text&quot;:&quot;(UTC-07:00) Arizona&quot;},&quot;id&quot;:&quot;5ee0e1257a3e080010a6e561&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5ee0e1bf07bfba00104bf2ab&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Winners.net Manager&quot;,&quot;id&quot;:&quot;5ee0e16f07bfba00104bf2aa&quot;,&quot;slug&quot;:&quot;winners.net-manager&quot;}},&quot;email&quot;:&quot;admin@winners.net&quot;,&quot;updatedAt&quot;:&quot;2020-06-10T13:35:59.462Z&quot;},{&quot;firstName&quot;:&quot;Artashes&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-09-02T08:27:22.946Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4.5,&quot;text&quot;:&quot;(UTC+04:30) Kabul&quot;},&quot;id&quot;:&quot;5f4f576a58f9330010cf5f8a&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5f4f5775816e4c00104b1d66&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;artashes@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-04-02T18:11:25.633Z&quot;},{&quot;firstName&quot;:&quot;Artashes&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-09-04T11:19:00.244Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5f5222a458f9330010cf5f8c&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;artashes1@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-09-04T11:23:21.455Z&quot;},{&quot;firstName&quot;:&quot;Artashes10&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-09-04T12:51:33.787Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Port Louis&quot;},&quot;id&quot;:&quot;5f52385558f9330010cf5f8d&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5f5238c6816e4c00104b1d76&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Artash_Group_Test_Edit&quot;,&quot;id&quot;:&quot;5f52337b816e4c00104b1d71&quot;,&quot;slug&quot;:&quot;artash_group_test_edit&quot;}},&quot;email&quot;:&quot;artashess@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:28:21.192Z&quot;},{&quot;lastName&quot;:&quot;artashes@priotix.com&quot;,&quot;firstName&quot;:&quot;adfewfwef&quot;,&quot;createdAt&quot;:&quot;2020-09-08T11:57:24.907Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5f5771a458f9330010cf5f8e&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;artashes@pri8otix.com&quot;,&quot;updatedAt&quot;:&quot;2020-09-08T11:57:24.907Z&quot;},{&quot;firstName&quot;:&quot;ferfergwerg&quot;,&quot;lastName&quot;:&quot;ergerwgerg&quot;,&quot;createdAt&quot;:&quot;2020-09-08T11:58:06.939Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5f5771ce58f9330010cf5f8f&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;artash.pivazyan@mail.ru&quot;,&quot;updatedAt&quot;:&quot;2020-09-08T11:58:06.939Z&quot;},{&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;lastName&quot;:&quot;Gharibyan&quot;,&quot;createdAt&quot;:&quot;2020-11-23T07:54:47.861Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5fbb6ac7d6af9900108984fe&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;vahagn@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:33:34.931Z&quot;},{&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;lastName&quot;:&quot;Gharibyan&quot;,&quot;createdAt&quot;:&quot;2020-11-23T14:49:59.305Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5fbbcc17d6af9900108984ff&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;vahagngharibyan62@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-11-23T14:49:59.305Z&quot;},{&quot;firstName&quot;:&quot;Artashes&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-12-11T06:43:47.410Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-4,&quot;text&quot;:&quot;(UTC-04:00) Asuncion&quot;},&quot;id&quot;:&quot;5fd315230adcf40010bce516&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;artashes.pivazyan@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-11T06:43:47.410Z&quot;},{&quot;lastName&quot;:&quot;Limbuwala&quot;,&quot;firstName&quot;:&quot;Savak&quot;,&quot;createdAt&quot;:&quot;2020-12-18T13:19:35.886Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:2,&quot;text&quot;:&quot;(UTC+01:00) Brussels, Copenhagen, Madrid, Paris&quot;},&quot;id&quot;:&quot;5fdcac679ad9eb0010fe3720&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5fdcadcb4b47ed0010a20590&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;savak@winners.bet&quot;,&quot;updatedAt&quot;:&quot;2020-12-22T10:52:51.094Z&quot;},{&quot;firstName&quot;:&quot;f&quot;,&quot;lastName&quot;:&quot;l&quot;,&quot;createdAt&quot;:&quot;2020-12-22T10:54:09.264Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-7,&quot;text&quot;:&quot;(UTC-07:00) Arizona&quot;},&quot;id&quot;:&quot;5fe1d05148550900107c49f6&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;e@mail.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-22T10:56:10.248Z&quot;},{&quot;firstName&quot;:&quot;Some&quot;,&quot;lastName&quot;:&quot;One&quot;,&quot;createdAt&quot;:&quot;2020-12-22T10:54:58.874Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5fe1d08248550900107c49f7&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;some@one.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-22T10:55:57.785Z&quot;},{&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;lastName&quot;:&quot;Gharibyan&quot;,&quot;createdAt&quot;:&quot;2020-12-23T12:23:06.734Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Samara, Ulyanovsk, Saratov&quot;},&quot;id&quot;:&quot;5fe336aa48550900107c49f8&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5fe337c0d9a9eb0010a2a888&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;vahagn@test.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:32:43.572Z&quot;},{&quot;lastName&quot;:&quot;test&quot;,&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;createdAt&quot;:&quot;2020-12-23T12:29:41.861Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-5,&quot;text&quot;:&quot;(UTC-06:00) Guadalajara, Mexico City, Monterrey&quot;},&quot;id&quot;:&quot;5fe3383548550900107c49f9&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;testfor@test.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:32:25.940Z&quot;},{&quot;lastName&quot;:&quot;asdasd&quot;,&quot;firstName&quot;:&quot;asd&quot;,&quot;createdAt&quot;:&quot;2020-12-24T11:57:30.345Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5fe4822adc5a170010cb9733&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;asd@asdd.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-24T11:57:30.345Z&quot;},{&quot;firstName&quot;:&quot;Sajjad&quot;,&quot;lastName&quot;:&quot;Mahdibeiraghdar&quot;,&quot;createdAt&quot;:&quot;2020-12-25T08:17:06.218Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4.5,&quot;text&quot;:&quot;(UTC+03:30) Tehran&quot;},&quot;id&quot;:&quot;5fe5a002dc5a170010cb9734&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5fe5a018d9a9eb0010a2a889&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;sajjad@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-25T08:17:28.539Z&quot;},{&quot;lastName&quot;:&quot;hf&quot;,&quot;firstName&quot;:&quot;hdf&quot;,&quot;createdAt&quot;:&quot;2020-12-28T13:29:19.637Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5fe9ddafdc5a170010cb9735&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;vava@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-28T13:29:19.637Z&quot;},{&quot;lastName&quot;:&quot;Brinnen&quot;,&quot;firstName&quot;:&quot;Axel&quot;,&quot;createdAt&quot;:&quot;2021-01-25T16:59:50.834Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:2,&quot;text&quot;:&quot;(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna&quot;},&quot;id&quot;:&quot;600ef906271b80001028f20c&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;600ef954e001b200113b5ae5&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;axel@win.gg&quot;,&quot;updatedAt&quot;:&quot;2021-01-26T13:23:32.655Z&quot;},{&quot;lastName&quot;:&quot;Manukyan&quot;,&quot;firstName&quot;:&quot;Sergey&quot;,&quot;createdAt&quot;:&quot;2021-02-01T07:11:46.857Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;6017a9b29bd5c20010288501&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5f4f57b7816e4c00104b1d67&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;sergey@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-02-01T10:13:43.060Z&quot;},{&quot;firstName&quot;:&quot;Hovhannes&quot;,&quot;lastName&quot;:&quot;Mehrabyan&quot;,&quot;createdAt&quot;:&quot;2021-02-01T07:19:34.731Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;6017ab869bd5c20010288502&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;hovhannes.mehrabyan@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-02-01T07:19:34.731Z&quot;},{&quot;lastName&quot;:&quot;Manukyan&quot;,&quot;firstName&quot;:&quot;Aram&quot;,&quot;createdAt&quot;:&quot;2021-02-02T13:13:28.402Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;60194ff89d41c000105eebd6&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;60195005a6d7990010ffc2b4&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;aram.manukyan@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-02-02T13:13:41.848Z&quot;},{&quot;firstName&quot;:&quot;Artash&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2021-04-02T18:13:03.402Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:3,&quot;text&quot;:&quot;(UTC+02:00) Beirut&quot;},&quot;id&quot;:&quot;60675eaf502ac400103da05f&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;6067601e01c2f00010e677c1&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;artashes-test@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-04-02T18:20:17.302Z&quot;},{&quot;lastName&quot;:&quot;Taft&quot;,&quot;firstName&quot;:&quot;Jesse&quot;,&quot;createdAt&quot;:&quot;2021-05-20T14:15:22.558Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-4,&quot;text&quot;:&quot;(UTC-05:00) Eastern Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;60a66efa1cf91c00103265f4&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;60a66f0609eb8b0010be0ac7&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;jesse@clearmarble.net&quot;,&quot;updatedAt&quot;:&quot;2021-05-20T14:15:34.690Z&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#    * json jsonHeaders = responseHeaders</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#    * def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorId = karate.jsonPath(response, &quot;$.adminList[?(@.firstName==&#39;Zeus&#39;)].id&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.16">
+      <div class="step-ref passed">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorLastName = karate.jsonPath(response, &quot;$.adminList[?(@.firstName==&#39;Zeus&#39;)].lastName&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.17">
+      <div class="step-ref passed">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorEmail = karate.jsonPath(response, &quot;$.adminList[?(@.firstName==&#39;Zeus&#39;)].email&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.19">
+      <div class="step-ref passed">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authorId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25.0.call.0.19">16:04:11.522 [print] [
+  &quot;5e592a1ec9ced91f8d4dc6e3&quot;
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.20">
+      <div class="step-ref passed">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authorLastName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25.0.call.0.20">16:04:11.523 [print] [
+  &quot;Πορτοκάλι&quot;
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.25.0.call">
+    <div class="step-container" id="0.25.0.call.0.21">
+      <div class="step-ref passed">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authorEmail</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25.0.call.0.21">16:04:11.523 [print] [
+  &quot;zeus@winesports.com&quot;
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def articleName = &#39;article_title_api_test&#39; + currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>set createArticlePayload.title = articleName</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request createArticlePayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">107</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">16:04:11.528 request:
+1 &gt; POST https://api-news.priotix.xyz/api/news
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxODQ5LCJleHAiOjE2MjI3MjI0NDl9.alU6SSZd9NFLURQqdBxK7p4407Io8q7gIDEY134xxLo
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 209
+1 &gt; Host: api-news.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;Πορτοκάλι&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;title&quot;:&quot;article_title_api_test1622721851526&quot;,&quot;content&quot;:&quot;&quot;}
+
+16:04:11.633 response time in milliseconds: 105
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 03 Jun 2021 12:04:11 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 415
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 26ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11688,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;Πορτοκάλι&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:04:11.641Z&quot;,&quot;id&quot;:&quot;60b8c53b6ce2cf0010afcb31&quot;,&quot;title&quot;:&quot;article_title_api_test1622721851526&quot;,&quot;updated&quot;:&quot;2021-06-03T12:04:11.641Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[1,3,5],&quot;ampContent&quot;:&quot;60b8c53b6ce2cf0010afcb30&quot;,&quot;tags&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def articleId = response.newsId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.38.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.security-headers</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.38.0.call">
+    <div class="step-container" id="0.38.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json responseHeaders = { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38.0.call.0.5">16:04:11.651 over-writing existing variable &#39;responseHeaders&#39; with new value: { headers: &#39;#(jsonHeaders)&#39; }
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.38.0.call">
+    <div class="step-container" id="0.38.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Response-Time == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.38.0.call">
+    <div class="step-container" id="0.38.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.38.0.call">
+    <div class="step-container" id="0.38.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.38.0.call">
+    <div class="step-container" id="0.38.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.38.0.call">
+    <div class="step-container" id="0.38.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Add Games</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request addGamesPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">106</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">16:04:11.659 request:
+2 &gt; PUT https://api-news.priotix.xyz/api/news/11688
+2 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxODQ5LCJleHAiOjE2MjI3MjI0NDl9.alU6SSZd9NFLURQqdBxK7p4407Io8q7gIDEY134xxLo
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 364
+2 &gt; Host: api-news.priotix.xyz
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;tags&quot;:[{&quot;gameId&quot;:1.0,&quot;resourceId&quot;:&quot;1&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/dota2\/dota2-40px.jpg&quot;}},&quot;name&quot;:&quot;Dota 2&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;shortName&quot;:&quot;Dota 2&quot;,&quot;type&quot;:&quot;game&quot;},{&quot;gameId&quot;:5.0,&quot;resourceId&quot;:&quot;5&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/cs\/csgo-40px.jpg&quot;}},&quot;name&quot;:&quot;CS:GO&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;shortName&quot;:&quot;CS:GO&quot;,&quot;type&quot;:&quot;game&quot;}]}
+
+16:04:11.762 response time in milliseconds: 103
+2 &lt; 200
+2 &lt; Server: nginx
+2 &lt; Date: Thu, 03 Jun 2021 12:04:11 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 756
+2 &lt; Connection: keep-alive
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+2 &lt; X-Response-Time: 33ms
+2 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11688,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;Πορτοκάλι&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:04:11.641Z&quot;,&quot;id&quot;:&quot;60b8c53b6ce2cf0010afcb31&quot;,&quot;title&quot;:&quot;article_title_api_test1622721851526&quot;,&quot;updated&quot;:&quot;2021-06-03T12:04:11.769Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[1,3,5],&quot;ampContent&quot;:&quot;60b8c53b6ce2cf0010afcb30&quot;,&quot;tags&quot;:[{&quot;gameId&quot;:1,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/dota2\/dota2-40px.jpg&quot;}},&quot;resourceId&quot;:&quot;1&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;name&quot;:&quot;Dota 2&quot;,&quot;shortName&quot;:&quot;Dota 2&quot;,&quot;type&quot;:&quot;game&quot;},{&quot;gameId&quot;:5,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/cs\/csgo-40px.jpg&quot;}},&quot;resourceId&quot;:&quot;5&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;name&quot;:&quot;CS:GO&quot;,&quot;shortName&quot;:&quot;CS:GO&quot;,&quot;type&quot;:&quot;game&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.50">16:04:11.763 over-writing existing variable &#39;jsonHeaders&#39; with new value: responseHeaders
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.51.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.security-headers</div>
+      </div>
+      <div class="time-cell passed">1</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.51.0.call">
+    <div class="step-container" id="0.51.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json responseHeaders = { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.51.0.call.0.5">16:04:11.763 over-writing existing variable &#39;securityHeaders&#39; with new value: call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }
+16:04:11.776 over-writing existing variable &#39;responseHeaders&#39; with new value: { headers: &#39;#(jsonHeaders)&#39; }
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.51.0.call">
+    <div class="step-container" id="0.51.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Response-Time == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.51.0.call">
+    <div class="step-container" id="0.51.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.51.0.call">
+    <div class="step-container" id="0.51.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.51.0.call">
+    <div class="step-container" id="0.51.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.51.0.call">
+    <div class="step-container" id="0.51.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Types</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Values</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;static/imgs/games/dota2/dota2-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;Dota 2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;Dota 2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;static/imgs/games/cs/csgo-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;CS:GO&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;CS:GO&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == 5</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Edit Games</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request editGamesPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.94">16:04:11.788 request:
+3 &gt; PUT https://api-news.priotix.xyz/api/news/11688
+3 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxODQ5LCJleHAiOjE2MjI3MjI0NDl9.alU6SSZd9NFLURQqdBxK7p4407Io8q7gIDEY134xxLo
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 374
+3 &gt; Host: api-news.priotix.xyz
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;tags&quot;:[{&quot;gameId&quot;:103.0,&quot;resourceId&quot;:&quot;103&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/valorant\/valorant-40px.jpg&quot;}},&quot;name&quot;:&quot;Valorant&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;shortName&quot;:&quot;Valorant&quot;,&quot;type&quot;:&quot;game&quot;},{&quot;gameId&quot;:2.0,&quot;resourceId&quot;:&quot;2&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/lol\/lol-40px.jpg&quot;}},&quot;name&quot;:&quot;LoL&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;shortName&quot;:&quot;LoL&quot;,&quot;type&quot;:&quot;game&quot;}]}
+
+16:04:11.841 response time in milliseconds: 53
+3 &lt; 200
+3 &lt; Server: nginx
+3 &lt; Date: Thu, 03 Jun 2021 12:04:11 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 766
+3 &lt; Connection: keep-alive
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+3 &lt; X-Response-Time: 25ms
+3 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11688,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;Πορτοκάλι&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:04:11.641Z&quot;,&quot;id&quot;:&quot;60b8c53b6ce2cf0010afcb31&quot;,&quot;title&quot;:&quot;article_title_api_test1622721851526&quot;,&quot;updated&quot;:&quot;2021-06-03T12:04:11.849Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[1,3,5],&quot;ampContent&quot;:&quot;60b8c53b6ce2cf0010afcb30&quot;,&quot;tags&quot;:[{&quot;gameId&quot;:103,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/valorant\/valorant-40px.jpg&quot;}},&quot;resourceId&quot;:&quot;103&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;name&quot;:&quot;Valorant&quot;,&quot;shortName&quot;:&quot;Valorant&quot;,&quot;type&quot;:&quot;game&quot;},{&quot;gameId&quot;:2,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;static\/imgs\/games\/lol\/lol-40px.jpg&quot;}},&quot;resourceId&quot;:&quot;2&quot;,&quot;channel&quot;:&quot;wingg&quot;,&quot;name&quot;:&quot;LoL&quot;,&quot;shortName&quot;:&quot;LoL&quot;,&quot;type&quot;:&quot;game&quot;}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">16:04:11.842 over-writing existing variable &#39;jsonHeaders&#39; with new value: responseHeaders
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.100.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.security-headers</div>
+      </div>
+      <div class="time-cell passed">1</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.100.0.call">
+    <div class="step-container" id="0.100.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json responseHeaders = { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.100.0.call.0.5">16:04:11.842 over-writing existing variable &#39;securityHeaders&#39; with new value: call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }
+16:04:11.850 over-writing existing variable &#39;responseHeaders&#39; with new value: { headers: &#39;#(jsonHeaders)&#39; }
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.100.0.call">
+    <div class="step-container" id="0.100.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Response-Time == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.100.0.call">
+    <div class="step-container" id="0.100.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.100.0.call">
+    <div class="step-container" id="0.100.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.100.0.call">
+    <div class="step-container" id="0.100.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.100.0.call">
+    <div class="step-container" id="0.100.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Types</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref passed">118</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Values</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;static/imgs/games/valorant/valorant-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;Valorant&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;Valorant&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;103&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == 103</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;static/imgs/games/lol/lol-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;LoL&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;LoL&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == 2.0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Delete Games</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request emptyGamesPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref passed">143</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.143">16:04:11.862 request:
+4 &gt; PUT https://api-news.priotix.xyz/api/news/11688
+4 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxODQ5LCJleHAiOjE2MjI3MjI0NDl9.alU6SSZd9NFLURQqdBxK7p4407Io8q7gIDEY134xxLo
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 11
+4 &gt; Host: api-news.priotix.xyz
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;tags&quot;:[]}
+
+16:04:11.906 response time in milliseconds: 43
+4 &lt; 200
+4 &lt; Server: nginx
+4 &lt; Date: Thu, 03 Jun 2021 12:04:11 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Content-Length: 415
+4 &lt; Connection: keep-alive
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+4 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+4 &lt; X-Response-Time: 23ms
+4 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+4 &lt; X-Frame-Options: SAMEORIGIN
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11688,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;Πορτοκάλι&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:04:11.641Z&quot;,&quot;id&quot;:&quot;60b8c53b6ce2cf0010afcb31&quot;,&quot;title&quot;:&quot;article_title_api_test1622721851526&quot;,&quot;updated&quot;:&quot;2021-06-03T12:04:11.914Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[1,3,5],&quot;ampContent&quot;:&quot;60b8c53b6ce2cf0010afcb30&quot;,&quot;tags&quot;:[]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref passed">144</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.148">16:04:11.907 over-writing existing variable &#39;jsonHeaders&#39; with new value: responseHeaders
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.149.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.security-headers</div>
+      </div>
+      <div class="time-cell passed">1</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.149.0.call">
+    <div class="step-container" id="0.149.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json responseHeaders = { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.149.0.call.0.5">16:04:11.907 over-writing existing variable &#39;securityHeaders&#39; with new value: call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }
+16:04:11.916 over-writing existing variable &#39;responseHeaders&#39; with new value: { headers: &#39;#(jsonHeaders)&#39; }
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.149.0.call">
+    <div class="step-container" id="0.149.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Response-Time == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.149.0.call">
+    <div class="step-container" id="0.149.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.149.0.call">
+    <div class="step-container" id="0.149.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.149.0.call">
+    <div class="step-container" id="0.149.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.149.0.call">
+    <div class="step-container" id="0.149.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Assert Key Type</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags == &#39;#[0]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Assert Key Value</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.157">
+      <div class="step-ref passed">157</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response.tags == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Delete Created Article</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.162">
+      <div class="step-ref passed">162</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def id = {id: &#39;#(articleId)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.163">
+      <div class="step-ref passed">163</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def deleteArticle = call read(&#39;file:src/test/java/helper/delete-news.feature&#39;) id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">78</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.163.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.delete-news</div>
+      </div>
+      <div class="time-cell passed">66</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def Id = __arg.id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;IDDDDDDDDDDD&#39; + Id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.163.0.call.0.6">16:04:11.932 [print] IDDDDDDDDDDD11688 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + Id</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method delete</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.163.0.call.0.9">16:04:11.934 request:
+1 &gt; DELETE https://api-news.priotix.xyz/api/news/11688
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxODQ5LCJleHAiOjE2MjI3MjI0NDl9.alU6SSZd9NFLURQqdBxK7p4407Io8q7gIDEY134xxLo
+1 &gt; Host: api-news.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:04:11.983 response time in milliseconds: 48
+1 &lt; 204
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 03 Jun 2021 12:04:11 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 28ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.14">
+      <div class="step-ref passed">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.163.0.call.0.14">16:04:11.983 over-writing existing variable &#39;jsonHeaders&#39; with new value: responseHeaders
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call">
+    <div class="step-container" id="0.163.0.call.0.15">
+      <div class="step-ref passed">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.163.0.call">
+      <div class="step-container" id="0.163.0.call.0.15.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.helper.security-headers</div>
+      </div>
+      <div class="time-cell passed">1</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call.0.15.0.call">
+    <div class="step-container" id="0.163.0.call.0.15.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>json responseHeaders = { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.163.0.call.0.15.0.call.0.5">16:04:11.983 over-writing existing variable &#39;securityHeaders&#39; with new value: call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }
+16:04:11.991 over-writing existing variable &#39;responseHeaders&#39; with new value: { headers: &#39;#(jsonHeaders)&#39; }
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call.0.15.0.call">
+    <div class="step-container" id="0.163.0.call.0.15.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Response-Time == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call.0.15.0.call">
+    <div class="step-container" id="0.163.0.call.0.15.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call.0.15.0.call">
+    <div class="step-container" id="0.163.0.call.0.15.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call.0.15.0.call">
+    <div class="step-container" id="0.163.0.call.0.15.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.163.0.call.0.15.0.call">
+    <div class="step-container" id="0.163.0.call.0.15.0.call.0.10">
+      <div class="step-ref passed">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

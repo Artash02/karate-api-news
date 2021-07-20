@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.news.checkContentCrud</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-06-07 11:10:32 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:17]"><span>[1:17]</span> <span>1. Create Article, 2. Add Sports 3. Edit Sports, 4. Delete Sports, 5. Delete Created Article</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/news/checkContentCrud.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Check Content Functionality</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:17]</span>
+                <span class="scenario-name">1. Create Article, 2. Add Sports 3. Edit Sports, 4. Delete Sports, 5. Delete Created Article</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>30198</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def currentTimeStamp = function() { return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">11:10:02.590 &lt;&lt; lock released, cached callSingle: classpath:helper/get-access-token.feature
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.get-access-token</div>
+      </div>
+      <div class="time-cell passed">799</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth_url = function() { return java.lang.System.getenv(&#39;API_AUTH_HOST&#39;) + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.5">11:10:01.734 &gt;&gt; lock acquired, begin callSingle: classpath:helper/get-access-token.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;AUTH      &#39; + auth_url()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.6">11:10:01.780 [print] AUTH      https://api-admins.priotix.xyz 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-admins.priotix.xyz&#39; + &#39;/auth/login?rememberMe=true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request __arg</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">776</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.9">11:10:02.078 request:
+1 &gt; POST https://api-admins.priotix.xyz/auth/login?rememberMe=true
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-admins.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;w1nPorta2&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;}
+
+11:10:02.556 response time in milliseconds: 469
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Mon, 07 Jun 2021 07:10:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 87ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;permissions&quot;:[{&quot;p&quot;:&quot;add-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permission-sets&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-groups&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permissions&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-user-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-user-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-permission-sets&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-resources&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-resource-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-resource-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;upload-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;search-abios-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;sync-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-pages&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-page-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-products&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-meta&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-page-meta&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-tags&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-customer&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-customers&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-customer&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-customer&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-users&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-user-policies&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-user-policies&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-descendant-groups&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tags&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tag-groups&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-products&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-app-config&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-app-config&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-articles&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;create-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;publish-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-products&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tweet&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-article-authors&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;upload-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-bookmaker&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-bookmaker&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-bookmakers&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-bookmaker&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-bookmaker&quot;,&quot;r&quot;:[]}],&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIzMDQ5ODAyLCJleHAiOjE2MjMwNTA0MDJ9.KQTxNa0lhAoI5MP30HlbkCXBiFV97meAYtUZUi2vpBo&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb25nTGl2ZWQiOnRydWUsInVzZXIiOnsiZW1haWwiOiJ6ZXVzQHdpbmVzcG9ydHMuY29tIiwiY3JlYXRlZCI6IjIwMjAtMDktMDNUMDg6MTQ6NDIuMzI4WiIsInVwZGF0ZWQiOiIyMDIwLTA0LTAyVDE0OjE5OjI2LjU5N1oiLCJjbGllbnRJZCI6InN4S1N0T3cwdUZyQ29mSXZVV014In0sImlhdCI6MTYyMzA0OTgwMiwiZXhwIjoxNjI0MjU5NDAyfQ.5ADYCJrCjMikIvCc9V3l3d8T5YKsjvtT1shOw5QFdz8&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def token = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.12">11:10:02.565 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIzMDQ5ODAyLCJleHAiOjE2MjMwNTA0MDJ9.KQTxNa0lhAoI5MP30HlbkCXBiFV97meAYtUZUi2vpBo 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function(actionName) {
+  var dbUtils = Java.type(&#39;utils.DbUtils&#39;);
+  var payload = new dbUtils();
+  return payload.getPayload(actionName);
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>def addBasicContentPayload = call payload &#39;add-basic-content&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">30192</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">11:10:32.803 src/test/java/news/checkContentCrud.feature:15
+Given def addBasicContentPayload = call payload &#39;add-basic-content&#39;
+&gt;&gt;&gt;&gt; js failed:
+01: function(actionName) {
+02:   var dbUtils = Java.type(&#39;utils.DbUtils&#39;);
+03:   var payload = new dbUtils();
+04:   return payload.getPayload(actionName);
+05: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-test-db:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-test-db}, caused by {java.net.UnknownHostException: api-test-db}}]
+- com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:182)
+- com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+- com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:150)
+- com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:102)
+- com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:282)
+- com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:186)
+- com.mongodb.client.internal.FindIterableImpl.first(FindIterableImpl.java:211)
+
+src/test/java/news/checkContentCrud.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Create Article</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def userInfo = call read(&#39;file:src/test/java/helper/get-user-info.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref skipped">24</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def articleName = &#39;article_title_api_test&#39; + currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>set createArticlePayload.title = articleName</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>request createArticlePayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def articleId = response.newsId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref skipped">34</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Add Basic Content</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref skipped">39</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref skipped">40</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>request addBasicContentPayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref skipped">41</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref skipped">47</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

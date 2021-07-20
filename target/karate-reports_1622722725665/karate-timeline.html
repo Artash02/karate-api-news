@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"news\/checkPlayers[1:20]","start":1622721932643,"end":1622721934652,"title":"news\/checkPlayers[1:20] 16:05:32.643-16:05:34.652 1. Create Article, 2. Add Players 3. Edit Players, 4. Delete Players, 5. Delete Created Article"},{"id":2,"group":1,"content":"news\/checkGames[1:21]","start":1622721935530,"end":1622721936084,"title":"news\/checkGames[1:21] 16:05:35.530-16:05:36.084 1. Create Article, 2. Add Games, 3. Edit Games, 4. Delete Games, 5. Delete Created Article"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

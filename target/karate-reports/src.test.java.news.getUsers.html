@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.news.getUsers</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-06-30 02:35:33 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Get Users Scenario</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/news/getUsers.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Users</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Get Users Scenario</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref failed">6</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url https://reqres.in/api/users?page=2</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">14:35:33.605 callSingle() will cache an exception
+14:35:33.605 &lt;&lt; lock released, cached callSingle: classpath:helper/get-access-token.feature
+14:35:33.606 callSingle() cached result is an exception
+14:35:33.620 src/test/java/news/getUsers.feature:6
+Given url https://reqres.in/api/users?page=2
+src/test/java/news/getUsers.feature:3
+karate-config.js
+&gt;&gt;&gt;&gt; js failed:
+01: function fn() {
+02: 
+03: var Conf = Java.type(&#39;config.Conf&#39;);
+04: var conf = new Conf();
+05: 
+06: var config = {
+07: api_auth_host: conf.getEnvVariableValueByName(&quot;API_AUTH_HOST&quot;),
+08: api_news_host: conf.getEnvVariableValueByName(&quot;API_NEWS_HOST&quot;),
+09: api_files_host: conf.getEnvVariableValueByName(&quot;API_FILES_HOST&quot;),
+10: access_token: &quot;token&quot;
+11: }
+12: 
+13: var result = karate.callSingle(&#39;classpath:helper/get-access-token.feature&#39;, {email: conf.getEnvVariableValueByName(&quot;BACKOFFICE_EMAIL&quot;),
+14: password: conf.getEnvVariableValueByName(&quot;BACKOFFICE_PASSWORD&quot;)});
+15: config.access_token=result.token;
+16: return config;
+17: 
+18: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 515 milliseconds for url: https://api-admins.priotix.xyz/auth/login?rememberMe=true
+classpath:helper/get-access-token.feature:9
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:1938)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1854)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- &lt;js&gt;.fn(Unnamed:13)
+
+src/test/java/news/getUsers.feature:6
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helper.get-access-token</div>
+      </div>
+      <div class="time-cell passed">577</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def auth_url = function() { return java.lang.System.getenv(&#39;API_AUTH_HOST&#39;) + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">14:35:32.989 &gt;&gt; lock acquired, begin callSingle: classpath:helper/get-access-token.feature
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;AUTH      &#39; + auth_url()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.6">14:35:33.044 [print] AUTH      null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api-admins.priotix.xyz&#39; + &#39;/auth/login?rememberMe=true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request __arg</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref failed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell failed">553</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.9">14:35:33.379 request:
+1 &gt; POST https://api-admins.priotix.xyz/auth/login?rememberMe=true
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-admins.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;w1nPorta2&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;}
+
+14:35:33.603 java.net.UnknownHostException: api-admins.priotix.xyz: Name or service not known, http call failed after 515 milliseconds for url: https://api-admins.priotix.xyz/auth/login?rememberMe=true
+14:35:33.603 classpath:helper/get-access-token.feature:9
+When method post
+http call failed after 515 milliseconds for url: https://api-admins.priotix.xyz/auth/login?rememberMe=true
+classpath:helper/get-access-token.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref skipped">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref skipped">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def token = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref skipped">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">14:35:33.620 src/test/java/news/getUsers.feature:7
+When method get
+src/test/java/news/getUsers.feature:3
+karate-config.js
+&gt;&gt;&gt;&gt; js failed:
+01: function fn() {
+02: 
+03: var Conf = Java.type(&#39;config.Conf&#39;);
+04: var conf = new Conf();
+05: 
+06: var config = {
+07: api_auth_host: conf.getEnvVariableValueByName(&quot;API_AUTH_HOST&quot;),
+08: api_news_host: conf.getEnvVariableValueByName(&quot;API_NEWS_HOST&quot;),
+09: api_files_host: conf.getEnvVariableValueByName(&quot;API_FILES_HOST&quot;),
+10: access_token: &quot;token&quot;
+11: }
+12: 
+13: var result = karate.callSingle(&#39;classpath:helper/get-access-token.feature&#39;, {email: conf.getEnvVariableValueByName(&quot;BACKOFFICE_EMAIL&quot;),
+14: password: conf.getEnvVariableValueByName(&quot;BACKOFFICE_PASSWORD&quot;)});
+15: config.access_token=result.token;
+16: return config;
+17: 
+18: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 515 milliseconds for url: https://api-admins.priotix.xyz/auth/login?rememberMe=true
+classpath:helper/get-access-token.feature:9
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:1938)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1854)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- &lt;js&gt;.fn(Unnamed:13)
+
+src/test/java/news/getUsers.feature:6
+src/test/java/news/getUsers.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">14:35:33.621 src/test/java/news/getUsers.feature:8
+Then status 200
+src/test/java/news/getUsers.feature:3
+karate-config.js
+&gt;&gt;&gt;&gt; js failed:
+01: function fn() {
+02: 
+03: var Conf = Java.type(&#39;config.Conf&#39;);
+04: var conf = new Conf();
+05: 
+06: var config = {
+07: api_auth_host: conf.getEnvVariableValueByName(&quot;API_AUTH_HOST&quot;),
+08: api_news_host: conf.getEnvVariableValueByName(&quot;API_NEWS_HOST&quot;),
+09: api_files_host: conf.getEnvVariableValueByName(&quot;API_FILES_HOST&quot;),
+10: access_token: &quot;token&quot;
+11: }
+12: 
+13: var result = karate.callSingle(&#39;classpath:helper/get-access-token.feature&#39;, {email: conf.getEnvVariableValueByName(&quot;BACKOFFICE_EMAIL&quot;),
+14: password: conf.getEnvVariableValueByName(&quot;BACKOFFICE_PASSWORD&quot;)});
+15: config.access_token=result.token;
+16: return config;
+17: 
+18: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: http call failed after 515 milliseconds for url: https://api-admins.priotix.xyz/auth/login?rememberMe=true
+classpath:helper/get-access-token.feature:9
+- com.intuit.karate.core.FeatureResult.getErrorMessagesCombined(FeatureResult.java:215)
+- com.intuit.karate.core.ScenarioEngine.callFeature(ScenarioEngine.java:1938)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1854)
+- com.intuit.karate.core.ScenarioBridge.callSingle(ScenarioBridge.java:213)
+- &lt;js&gt;.fn(Unnamed:13)
+
+src/test/java/news/getUsers.feature:6
+src/test/java/news/getUsers.feature:7
+src/test/java/news/getUsers.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

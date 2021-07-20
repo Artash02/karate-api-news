@@ -1,0 +1,4685 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: news/checkEsports.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>myproject</td>
+      <td>03 Jun 2021, 16:00</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">news/checkEsports.feature</td>
+          <td      class="passed"    >134</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">134</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="1908806733">1.908</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">news/checkEsports.feature</span>
+
+
+</div>
+
+        <div class="description indention">Check Esports Functionality</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.116</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def currentTimeStamp = function() { return java.lang.System.currentTimeMillis() + '' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:00:25.076 &lt;&lt; lock released, cached callSingle: classpath:helper/getAccessToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">helper/getAccessToken.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>{
+  &quot;email&quot;: &quot;zeus@winesports.com&quot;,
+  &quot;password&quot;: &quot;w1nPorta2&quot;
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def auth_url = function() { return java.lang.System.getenv('API_AUTH_HOST') + '' }</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>16:00:24.354 &gt;&gt; lock acquired, begin callSingle: classpath:helper/getAccessToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print 'AUTH      ' + auth_url()</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:00:24.397 [print] AUTH      null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url 'https://api-admins.priotix.xyz' + '/auth/login?rememberMe=true'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request __arg</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.648</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:00:24.625 request:
+1 &gt; POST https://api-admins.priotix.xyz/auth/login?rememberMe=true
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-admins.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;w1nPorta2&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;}
+
+16:00:25.044 response time in milliseconds: 413
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 03 Jun 2021 12:00:24 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 116ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;permissions&quot;:[{&quot;p&quot;:&quot;add-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permission-sets&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-groups&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-user-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permissions&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-permission&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-user-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-user-permission-set&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-permission-sets&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-resources&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-resource-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-resource-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;upload-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;search-abios-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;sync-resource&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-pages&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-page&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-page-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-products&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-meta&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-page-meta&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-tags&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-page-seo&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-customer&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-customers&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-customer&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-customer&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-users&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-user&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-user-policies&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-user-policies&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-descendant-groups&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tag&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tags&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tag-groups&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-tag-group&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-products&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-product&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-app-config&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-app-config&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-articles&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;create-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;publish-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-products&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-tweet&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-article&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-article-authors&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;upload-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-image&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;remove-article-layout&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;add-bookmaker&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-bookmaker&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;get-bookmakers&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;delete-bookmaker&quot;,&quot;r&quot;:[]},{&quot;p&quot;:&quot;edit-bookmaker&quot;,&quot;r&quot;:[]}],&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb25nTGl2ZWQiOnRydWUsInVzZXIiOnsiZW1haWwiOiJ6ZXVzQHdpbmVzcG9ydHMuY29tIiwiY3JlYXRlZCI6IjIwMjAtMDktMDNUMDg6MTQ6NDIuMzI4WiIsInVwZGF0ZWQiOiIyMDIwLTA0LTAyVDE0OjE5OjI2LjU5N1oiLCJjbGllbnRJZCI6InN4S1N0T3cwdUZyQ29mSXZVV014In0sImlhdCI6MTYyMjcyMTYyNCwiZXhwIjoxNjIzOTMxMjI0fQ.EpVRt_JxjZ_xOc_ztNyR9VeyBD7lus2IKv32JAUPYqs&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def token = response.accessToken</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print token</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>16:00:25.055 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def payload =</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>function(actionName) {
+  var dbUtils = Java.type('utils.DbUtils');
+  var payload = new dbUtils();
+  return payload.getPayload(actionName);
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def createArticlePayload = call payload 'create-article'</span>
+
+  <span class="lead-duration duration">0.247</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def addChannelPayload = call payload 'add-channel'</span>
+
+  <span class="lead-duration duration">0.094</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def addEsportsPayload = call payload 'add-esports'</span>
+
+  <span class="lead-duration duration">0.043</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def editEsportsPayload = call payload 'edit-esports'</span>
+
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def deleteEsportsPayload = call payload 'empty-tags'</span>
+
+  <span class="lead-duration duration">0.019</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.792</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">1. Create Article, 2. Add Sports 3. Edit Sports, 4. Delete Sports, 5. Delete Created Article</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">def userInfo = call read('file:src/test/java/helper/get-user-info.feature')</span>
+
+  <span class="lead-duration duration">0.139</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/helper/get-user-info.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url api_auth_host + '/users?limit=10000'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header authorization = 'Bearer ' + access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.077</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>16:00:25.546 request:
+1 &gt; GET https://api-admins.priotix.xyz/users?limit=10000
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc
+1 &gt; Host: api-admins.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:00:25.620 response time in milliseconds: 67
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 03 Jun 2021 12:00:25 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 30ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;total&quot;:38,&quot;adminList&quot;:[{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;createdAt&quot;:&quot;2020-04-07T15:31:39.573Z&quot;,&quot;created&quot;:&quot;2020-02-28T14:56:30.152Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5da4289b7a5adfca6a078a44&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;updated&quot;:&quot;2020-02-28T14:56:30.152Z&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-05-25T14:40:54.587Z&quot;},{&quot;lastName&quot;:&quot;Writer&quot;,&quot;firstName&quot;:&quot;Freelance&quot;,&quot;createdAt&quot;:&quot;2020-04-11T09:48:20.544Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e919264e966af0010b65b62&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e91927dd9189c0011c5c5e7&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;freelance-writer@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-13T07:42:33.832Z&quot;},{&quot;lastName&quot;:&quot;Editor&quot;,&quot;firstName&quot;:&quot;Chiefdd&quot;,&quot;createdAt&quot;:&quot;2020-04-11T09:50:18.340Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e9192dae966af0010b65b63&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e9192e1d9189c0011c5c5e8&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;chief-editor@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-13T22:23:15.760Z&quot;},{&quot;firstName&quot;:&quot;Staff&quot;,&quot;lastName&quot;:&quot;Editor&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:28:36.383Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920c54cbb6e600100dc0bf&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920d0258489b00100760a1&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Staff Editor&quot;,&quot;id&quot;:&quot;5e8357bf127df500106ffce1&quot;,&quot;slug&quot;:&quot;staff-editor&quot;}},&quot;email&quot;:&quot;staff-editor@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:30.776Z&quot;},{&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;Admin&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:29:31.318Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920c8bcbb6e600100dc0c0&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920ced58489b00100760a0&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;admin@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:09.766Z&quot;},{&quot;firstName&quot;:&quot;Staff&quot;,&quot;lastName&quot;:&quot;Writer&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:30:08.764Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-5,&quot;text&quot;:&quot;(UTC-06:00) Central Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920cb0cbb6e600100dc0c1&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920d0e58489b00100760a2&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Staff Writer&quot;,&quot;id&quot;:&quot;5e835838127df500106ffce2&quot;,&quot;slug&quot;:&quot;staff-writer&quot;}},&quot;email&quot;:&quot;staff-writer@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:42.699Z&quot;},{&quot;firstName&quot;:&quot;Seo&quot;,&quot;lastName&quot;:&quot;Manager&quot;,&quot;createdAt&quot;:&quot;2020-04-11T18:30:50.440Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e920cdacbb6e600100dc0c2&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e920d1958489b00100760a3&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;SEO Manager&quot;,&quot;id&quot;:&quot;5e835879127df500106ffce3&quot;,&quot;slug&quot;:&quot;seo-manager&quot;}},&quot;email&quot;:&quot;seo-manager@winesports.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-11T18:31:53.429Z&quot;},{&quot;lastName&quot;:&quot;Wynne&quot;,&quot;firstName&quot;:&quot;Jared&quot;,&quot;createdAt&quot;:&quot;2020-04-13T11:46:18.470Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-5,&quot;text&quot;:&quot;(UTC-06:00) Central Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5e94510a513ed80010af3a5d&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e94511b58489b00100760a8&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;jwynne@winners.net&quot;,&quot;updatedAt&quot;:&quot;2020-04-13T12:11:56.993Z&quot;},{&quot;firstName&quot;:&quot;awd&quot;,&quot;lastName&quot;:&quot;aqwd&quot;,&quot;createdAt&quot;:&quot;2020-04-14T08:06:08.103Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5e956ef016b7680010996c8d&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e956ef858489b00100760a9&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;a@g.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-14T08:06:16.270Z&quot;},{&quot;firstName&quot;:&quot;awd&quot;,&quot;lastName&quot;:&quot;awd&quot;,&quot;createdAt&quot;:&quot;2020-04-14T11:37:21.007Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-06:00) Central America&quot;},&quot;id&quot;:&quot;5e95a07116b7680010996c8e&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e95a07958489b00100760aa&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Freelance Writer&quot;,&quot;id&quot;:&quot;5e850534dd465300109c0c8b&quot;,&quot;slug&quot;:&quot;freelance-writer&quot;}},&quot;email&quot;:&quot;awd@awd.org&quot;,&quot;updatedAt&quot;:&quot;2020-04-21T12:31:11.285Z&quot;},{&quot;lastName&quot;:&quot;Khachatryan&quot;,&quot;firstName&quot;:&quot;Felix&quot;,&quot;createdAt&quot;:&quot;2020-04-14T15:05:53.720Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e95d15116b7680010996c8f&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5e95d16358489b00100760ab&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;felix@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-14T15:06:11.985Z&quot;},{&quot;firstName&quot;:&quot;awdawd&quot;,&quot;lastName&quot;:&quot;awdawd&quot;,&quot;createdAt&quot;:&quot;2020-04-15T15:28:02.214Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-06:00) Saskatchewan&quot;},&quot;id&quot;:&quot;5e97280216b7680010996c90&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;awd@awd.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-15T15:28:02.214Z&quot;},{&quot;lastName&quot;:&quot;Grigoryan&quot;,&quot;firstName&quot;:&quot;Davit&quot;,&quot;createdAt&quot;:&quot;2020-04-16T13:58:13.756Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5e98647516b7680010996c91&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;davit@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-16T13:58:13.756Z&quot;},{&quot;firstName&quot;:&quot;narek0703&quot;,&quot;lastName&quot;:&quot;narek0703&quot;,&quot;createdAt&quot;:&quot;2020-04-22T09:53:50.233Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Tbilisi&quot;},&quot;id&quot;:&quot;5ea0142e6040c4001035dc23&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5ea0145d58489b00100760af&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;narek0703@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-04-22T09:54:37.858Z&quot;},{&quot;firstName&quot;:&quot;Test&quot;,&quot;lastName&quot;:&quot;ttest&quot;,&quot;createdAt&quot;:&quot;2020-05-07T09:05:02.505Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-06:00) Central America&quot;},&quot;id&quot;:&quot;5eb3cf3e75829a001098bec1&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5eb9ce3c8532340010f5d53f&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;test-me&quot;,&quot;id&quot;:&quot;5eb9cf948532340010f5d543&quot;,&quot;slug&quot;:&quot;test-me&quot;}},&quot;email&quot;:&quot;test@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-05-11T22:22:00.994Z&quot;},{&quot;firstName&quot;:&quot;admin&quot;,&quot;lastName&quot;:&quot;admin&quot;,&quot;createdAt&quot;:&quot;2020-06-10T13:33:25.614Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-7,&quot;text&quot;:&quot;(UTC-07:00) Arizona&quot;},&quot;id&quot;:&quot;5ee0e1257a3e080010a6e561&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5ee0e1bf07bfba00104bf2ab&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Winners.net Manager&quot;,&quot;id&quot;:&quot;5ee0e16f07bfba00104bf2aa&quot;,&quot;slug&quot;:&quot;winners.net-manager&quot;}},&quot;email&quot;:&quot;admin@winners.net&quot;,&quot;updatedAt&quot;:&quot;2020-06-10T13:35:59.462Z&quot;},{&quot;firstName&quot;:&quot;Artashes&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-09-02T08:27:22.946Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4.5,&quot;text&quot;:&quot;(UTC+04:30) Kabul&quot;},&quot;id&quot;:&quot;5f4f576a58f9330010cf5f8a&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5f4f5775816e4c00104b1d66&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;artashes@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-04-02T18:11:25.633Z&quot;},{&quot;firstName&quot;:&quot;Artashes&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-09-04T11:19:00.244Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5f5222a458f9330010cf5f8c&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;artashes1@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-09-04T11:23:21.455Z&quot;},{&quot;firstName&quot;:&quot;Artashes10&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-09-04T12:51:33.787Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Port Louis&quot;},&quot;id&quot;:&quot;5f52385558f9330010cf5f8d&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5f5238c6816e4c00104b1d76&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Artash_Group_Test_Edit&quot;,&quot;id&quot;:&quot;5f52337b816e4c00104b1d71&quot;,&quot;slug&quot;:&quot;artash_group_test_edit&quot;}},&quot;email&quot;:&quot;artashess@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:28:21.192Z&quot;},{&quot;lastName&quot;:&quot;artashes@priotix.com&quot;,&quot;firstName&quot;:&quot;adfewfwef&quot;,&quot;createdAt&quot;:&quot;2020-09-08T11:57:24.907Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5f5771a458f9330010cf5f8e&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;artashes@pri8otix.com&quot;,&quot;updatedAt&quot;:&quot;2020-09-08T11:57:24.907Z&quot;},{&quot;firstName&quot;:&quot;ferfergwerg&quot;,&quot;lastName&quot;:&quot;ergerwgerg&quot;,&quot;createdAt&quot;:&quot;2020-09-08T11:58:06.939Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5f5771ce58f9330010cf5f8f&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;artash.pivazyan@mail.ru&quot;,&quot;updatedAt&quot;:&quot;2020-09-08T11:58:06.939Z&quot;},{&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;lastName&quot;:&quot;Gharibyan&quot;,&quot;createdAt&quot;:&quot;2020-11-23T07:54:47.861Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;5fbb6ac7d6af9900108984fe&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;vahagn@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:33:34.931Z&quot;},{&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;lastName&quot;:&quot;Gharibyan&quot;,&quot;createdAt&quot;:&quot;2020-11-23T14:49:59.305Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5fbbcc17d6af9900108984ff&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;vahagngharibyan62@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-11-23T14:49:59.305Z&quot;},{&quot;firstName&quot;:&quot;Artashes&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2020-12-11T06:43:47.410Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-4,&quot;text&quot;:&quot;(UTC-04:00) Asuncion&quot;},&quot;id&quot;:&quot;5fd315230adcf40010bce516&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;artashes.pivazyan@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-11T06:43:47.410Z&quot;},{&quot;lastName&quot;:&quot;Limbuwala&quot;,&quot;firstName&quot;:&quot;Savak&quot;,&quot;createdAt&quot;:&quot;2020-12-18T13:19:35.886Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:2,&quot;text&quot;:&quot;(UTC+01:00) Brussels, Copenhagen, Madrid, Paris&quot;},&quot;id&quot;:&quot;5fdcac679ad9eb0010fe3720&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5fdcadcb4b47ed0010a20590&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;savak@winners.bet&quot;,&quot;updatedAt&quot;:&quot;2020-12-22T10:52:51.094Z&quot;},{&quot;firstName&quot;:&quot;f&quot;,&quot;lastName&quot;:&quot;l&quot;,&quot;createdAt&quot;:&quot;2020-12-22T10:54:09.264Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-7,&quot;text&quot;:&quot;(UTC-07:00) Arizona&quot;},&quot;id&quot;:&quot;5fe1d05148550900107c49f6&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;e@mail.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-22T10:56:10.248Z&quot;},{&quot;firstName&quot;:&quot;Some&quot;,&quot;lastName&quot;:&quot;One&quot;,&quot;createdAt&quot;:&quot;2020-12-22T10:54:58.874Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5fe1d08248550900107c49f7&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;some@one.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-22T10:55:57.785Z&quot;},{&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;lastName&quot;:&quot;Gharibyan&quot;,&quot;createdAt&quot;:&quot;2020-12-23T12:23:06.734Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Samara, Ulyanovsk, Saratov&quot;},&quot;id&quot;:&quot;5fe336aa48550900107c49f8&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5fe337c0d9a9eb0010a2a888&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;vahagn@test.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:32:43.572Z&quot;},{&quot;lastName&quot;:&quot;test&quot;,&quot;firstName&quot;:&quot;Vahagn&quot;,&quot;createdAt&quot;:&quot;2020-12-23T12:29:41.861Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-5,&quot;text&quot;:&quot;(UTC-06:00) Guadalajara, Mexico City, Monterrey&quot;},&quot;id&quot;:&quot;5fe3383548550900107c49f9&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;testfor@test.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-23T12:32:25.940Z&quot;},{&quot;lastName&quot;:&quot;asdasd&quot;,&quot;firstName&quot;:&quot;asd&quot;,&quot;createdAt&quot;:&quot;2020-12-24T11:57:30.345Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;5fe4822adc5a170010cb9733&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;asd@asdd.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-24T11:57:30.345Z&quot;},{&quot;firstName&quot;:&quot;Sajjad&quot;,&quot;lastName&quot;:&quot;Mahdibeiraghdar&quot;,&quot;createdAt&quot;:&quot;2020-12-25T08:17:06.218Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4.5,&quot;text&quot;:&quot;(UTC+03:30) Tehran&quot;},&quot;id&quot;:&quot;5fe5a002dc5a170010cb9734&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5fe5a018d9a9eb0010a2a889&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;sajjad@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-25T08:17:28.539Z&quot;},{&quot;lastName&quot;:&quot;hf&quot;,&quot;firstName&quot;:&quot;hdf&quot;,&quot;createdAt&quot;:&quot;2020-12-28T13:29:19.637Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-6,&quot;text&quot;:&quot;(UTC-07:00) Chihuahua, La Paz, Mazatlan&quot;},&quot;id&quot;:&quot;5fe9ddafdc5a170010cb9735&quot;,&quot;state&quot;:&quot;inactive&quot;,&quot;email&quot;:&quot;vava@gmail.com&quot;,&quot;updatedAt&quot;:&quot;2020-12-28T13:29:19.637Z&quot;},{&quot;lastName&quot;:&quot;Brinnen&quot;,&quot;firstName&quot;:&quot;Axel&quot;,&quot;createdAt&quot;:&quot;2021-01-25T16:59:50.834Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:2,&quot;text&quot;:&quot;(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna&quot;},&quot;id&quot;:&quot;600ef906271b80001028f20c&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;600ef954e001b200113b5ae5&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;axel@win.gg&quot;,&quot;updatedAt&quot;:&quot;2021-01-26T13:23:32.655Z&quot;},{&quot;lastName&quot;:&quot;Manukyan&quot;,&quot;firstName&quot;:&quot;Sergey&quot;,&quot;createdAt&quot;:&quot;2021-02-01T07:11:46.857Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;6017a9b29bd5c20010288501&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;5f4f57b7816e4c00104b1d67&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;sergey@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-02-01T10:13:43.060Z&quot;},{&quot;firstName&quot;:&quot;Hovhannes&quot;,&quot;lastName&quot;:&quot;Mehrabyan&quot;,&quot;createdAt&quot;:&quot;2021-02-01T07:19:34.731Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;6017ab869bd5c20010288502&quot;,&quot;state&quot;:&quot;active&quot;,&quot;email&quot;:&quot;hovhannes.mehrabyan@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-02-01T07:19:34.731Z&quot;},{&quot;lastName&quot;:&quot;Manukyan&quot;,&quot;firstName&quot;:&quot;Aram&quot;,&quot;createdAt&quot;:&quot;2021-02-02T13:13:28.402Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:4,&quot;text&quot;:&quot;(UTC+04:00) Yerevan&quot;},&quot;id&quot;:&quot;60194ff89d41c000105eebd6&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;60195005a6d7990010ffc2b4&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Admin&quot;,&quot;id&quot;:&quot;5e83570b127df500106ffcdf&quot;,&quot;slug&quot;:&quot;admin&quot;}},&quot;email&quot;:&quot;aram.manukyan@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-02-02T13:13:41.848Z&quot;},{&quot;firstName&quot;:&quot;Artash&quot;,&quot;lastName&quot;:&quot;Pivazyan&quot;,&quot;createdAt&quot;:&quot;2021-04-02T18:13:03.402Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:3,&quot;text&quot;:&quot;(UTC+02:00) Beirut&quot;},&quot;id&quot;:&quot;60675eaf502ac400103da05f&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;6067601e01c2f00010e677c1&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Chief Editor&quot;,&quot;id&quot;:&quot;5e835798127df500106ffce0&quot;,&quot;slug&quot;:&quot;chief-editor&quot;}},&quot;email&quot;:&quot;artashes-test@priotix.com&quot;,&quot;updatedAt&quot;:&quot;2021-04-02T18:20:17.302Z&quot;},{&quot;lastName&quot;:&quot;Taft&quot;,&quot;firstName&quot;:&quot;Jesse&quot;,&quot;createdAt&quot;:&quot;2021-05-20T14:15:22.558Z&quot;,&quot;timeZone&quot;:{&quot;offset&quot;:-4,&quot;text&quot;:&quot;(UTC-05:00) Eastern Time (US &amp; Canada)&quot;},&quot;id&quot;:&quot;60a66efa1cf91c00103265f4&quot;,&quot;state&quot;:&quot;active&quot;,&quot;userGroup&quot;:{&quot;id&quot;:&quot;60a66f0609eb8b0010be0ac7&quot;,&quot;group&quot;:{&quot;name&quot;:&quot;Super Admin&quot;,&quot;id&quot;:&quot;5e820e3f729440e31ee9cb2a&quot;,&quot;slug&quot;:&quot;super-admin&quot;}},&quot;email&quot;:&quot;jesse@clearmarble.net&quot;,&quot;updatedAt&quot;:&quot;2021-05-20T14:15:34.690Z&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def authorId = karate.jsonPath(response, &quot;$.adminList[?(@.firstName=='Zeus')].id&quot;)</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def authorLastName = karate.jsonPath(response, &quot;$.adminList[?(@.firstName=='Zeus')].lastName&quot;)</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">def authorEmail = karate.jsonPath(response, &quot;$.adminList[?(@.firstName=='Zeus')].email&quot;)</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print authorId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>16:00:25.664 [print] [
+  &quot;5e592a1ec9ced91f8d4dc6e3&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print authorLastName</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>16:00:25.666 [print] [
+  &quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print authorEmail</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>16:00:25.667 [print] [
+  &quot;zeus@winesports.com&quot;
+]
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url api_news_host + '/api/news'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header authorization = 'Bearer ' + access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def articleName = 'article_title_api_test' + currentTimeStamp()</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set createArticlePayload.title = articleName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request createArticlePayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.118</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>16:00:25.678 request:
+1 &gt; POST https://api-news.priotix.xyz/api/news
+1 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 209
+1 &gt; Host: api-news.priotix.xyz
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;title&quot;:&quot;article_title_api_test1622721625675&quot;,&quot;content&quot;:&quot;&quot;}
+
+16:00:25.794 response time in milliseconds: 115
+1 &lt; 201
+1 &lt; Server: nginx
+1 &lt; Date: Thu, 03 Jun 2021 12:00:25 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 415
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+1 &lt; X-Response-Time: 30ms
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11686,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:00:25.791Z&quot;,&quot;id&quot;:&quot;60b8c4596ce2cf0010afcb2d&quot;,&quot;title&quot;:&quot;article_title_api_test1622721625675&quot;,&quot;updated&quot;:&quot;2021-06-03T12:00:25.791Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[1,3,5],&quot;ampContent&quot;:&quot;60b8c4596ce2cf0010afcb2c&quot;,&quot;tags&quot;:[]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">def articleId = response.newsId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json jsonHeaders = responseHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def securityHeaders = call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.022</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/helper/security-headers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>{
+  &quot;headers&quot;: {
+    &quot;Server&quot;: [
+      &quot;nginx&quot;
+    ],
+    &quot;Date&quot;: [
+      &quot;Thu, 03 Jun 2021 12:00:25 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;415&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Methods&quot;: [
+      &quot;GET, POST, DELETE, PUT&quot;
+    ],
+    &quot;Access-Control-Allow-Headers&quot;: [
+      &quot;Origin, Accept, X-Requested-With, Content-Type, Authorization&quot;
+    ],
+    &quot;X-Response-Time&quot;: [
+      &quot;30ms&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=63072000; includeSubdomains; preload&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-Xss-Protection&quot;: [
+      &quot;1; mode=block&quot;
+    ]
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json responseHeaders = { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>16:00:25.808 over-writing existing variable 'responseHeaders' with new value: { headers: '#(jsonHeaders)' }
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Response-Time == '#array'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url api_news_host + '/api/news/' + articleId</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header authorization = 'Bearer ' + access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request addChannelPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.054</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>16:00:25.823 request:
+2 &gt; PUT https://api-news.priotix.xyz/api/news/11686
+2 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 142
+2 &gt; Host: api-news.priotix.xyz
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;products&quot;:[6.0]}
+
+16:00:25.875 response time in milliseconds: 51
+2 &lt; 200
+2 &lt; Server: nginx
+2 &lt; Date: Thu, 03 Jun 2021 12:00:25 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 411
+2 &lt; Connection: keep-alive
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+2 &lt; X-Response-Time: 28ms
+2 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11686,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:00:25.791Z&quot;,&quot;id&quot;:&quot;60b8c4596ce2cf0010afcb2d&quot;,&quot;title&quot;:&quot;article_title_api_test1622721625675&quot;,&quot;updated&quot;:&quot;2021-06-03T12:00:25.873Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[6],&quot;ampContent&quot;:&quot;60b8c4596ce2cf0010afcb2c&quot;,&quot;tags&quot;:[]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json jsonHeaders = responseHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>16:00:25.876 over-writing existing variable 'jsonHeaders' with new value: responseHeaders
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def securityHeaders = call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.026</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/helper/security-headers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>{
+  &quot;headers&quot;: {
+    &quot;Server&quot;: [
+      &quot;nginx&quot;
+    ],
+    &quot;Date&quot;: [
+      &quot;Thu, 03 Jun 2021 12:00:25 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;411&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Methods&quot;: [
+      &quot;GET, POST, DELETE, PUT&quot;
+    ],
+    &quot;Access-Control-Allow-Headers&quot;: [
+      &quot;Origin, Accept, X-Requested-With, Content-Type, Authorization&quot;
+    ],
+    &quot;X-Response-Time&quot;: [
+      &quot;28ms&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=63072000; includeSubdomains; preload&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-Xss-Protection&quot;: [
+      &quot;1; mode=block&quot;
+    ]
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json responseHeaders = { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>16:00:25.877 over-writing existing variable 'securityHeaders' with new value: call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }
+16:00:25.897 over-writing existing variable 'responseHeaders' with new value: { headers: '#(jsonHeaders)' }
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Response-Time == '#array'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url api_news_host + '/api/news/' + articleId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header authorization = 'Bearer ' + access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request addEsportsPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.072</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>16:00:25.905 request:
+3 &gt; PUT https://api-news.priotix.xyz/api/news/11686
+3 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 485
+3 &gt; Host: api-news.priotix.xyz
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;tags&quot;:[{&quot;resourceId&quot;:&quot;5ebd631a224ed80010a0faf8&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;tags\/0888825f6d42b938cc75c4e927291bbd\/e34658851a6ba8ef1ca801fab4698e6a\/original.png&quot;}},&quot;color&quot;:&quot;#b91e10&quot;,&quot;name&quot;:&quot;Dota 2&quot;,&quot;channel&quot;:&quot;winnersnet&quot;,&quot;type&quot;:&quot;esport&quot;},{&quot;resourceId&quot;:&quot;5ebd631a224ed80010a0faf9&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;tags\/b1d6e0109fcb827c126f59f1f773a6bb\/e34658851a6ba8ef1ca801fab4698e6a\/original.png&quot;}},&quot;color&quot;:&quot;#4e06ff&quot;,&quot;name&quot;:&quot;CS:GO&quot;,&quot;channel&quot;:&quot;winnersnet&quot;,&quot;type&quot;:&quot;esport&quot;}]}
+
+16:00:25.975 response time in milliseconds: 69
+3 &lt; 200
+3 &lt; Server: nginx
+3 &lt; Date: Thu, 03 Jun 2021 12:00:25 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Content-Length: 879
+3 &lt; Connection: keep-alive
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+3 &lt; X-Response-Time: 45ms
+3 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11686,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:00:25.791Z&quot;,&quot;id&quot;:&quot;60b8c4596ce2cf0010afcb2d&quot;,&quot;title&quot;:&quot;article_title_api_test1622721625675&quot;,&quot;updated&quot;:&quot;2021-06-03T12:00:25.972Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[6],&quot;ampContent&quot;:&quot;60b8c4596ce2cf0010afcb2c&quot;,&quot;tags&quot;:[{&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;tags\/0888825f6d42b938cc75c4e927291bbd\/e34658851a6ba8ef1ca801fab4698e6a\/original.png&quot;}},&quot;resourceId&quot;:&quot;5ebd631a224ed80010a0faf8&quot;,&quot;color&quot;:&quot;#b91e10&quot;,&quot;channel&quot;:&quot;winnersnet&quot;,&quot;name&quot;:&quot;Dota 2&quot;,&quot;type&quot;:&quot;esport&quot;},{&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;tags\/b1d6e0109fcb827c126f59f1f773a6bb\/e34658851a6ba8ef1ca801fab4698e6a\/original.png&quot;}},&quot;resourceId&quot;:&quot;5ebd631a224ed80010a0faf9&quot;,&quot;color&quot;:&quot;#4e06ff&quot;,&quot;channel&quot;:&quot;winnersnet&quot;,&quot;name&quot;:&quot;CS:GO&quot;,&quot;type&quot;:&quot;esport&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json jsonHeaders = responseHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>16:00:25.976 over-writing existing variable 'jsonHeaders' with new value: responseHeaders
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def securityHeaders = call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/helper/security-headers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>{
+  &quot;headers&quot;: {
+    &quot;Server&quot;: [
+      &quot;nginx&quot;
+    ],
+    &quot;Date&quot;: [
+      &quot;Thu, 03 Jun 2021 12:00:25 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;879&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Methods&quot;: [
+      &quot;GET, POST, DELETE, PUT&quot;
+    ],
+    &quot;Access-Control-Allow-Headers&quot;: [
+      &quot;Origin, Accept, X-Requested-With, Content-Type, Authorization&quot;
+    ],
+    &quot;X-Response-Time&quot;: [
+      &quot;45ms&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=63072000; includeSubdomains; preload&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-Xss-Protection&quot;: [
+      &quot;1; mode=block&quot;
+    ]
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json responseHeaders = { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>16:00:25.976 over-writing existing variable 'securityHeaders' with new value: call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }
+16:00:25.991 over-writing existing variable 'responseHeaders' with new value: { headers: '#(jsonHeaders)' }
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Response-Time == '#array'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].channel == '#string'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].name == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].resourceId == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].type == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].color == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].channel == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].name == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].resourceId == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].type == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].color == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].channel == 'winnersnet'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].name == 'Dota 2'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].resourceId == '5ebd631a224ed80010a0faf8'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].type == 'esport'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].color == '#b91e10'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].channel == 'winnersnet'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].name == 'CS:GO'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].resourceId == '5ebd631a224ed80010a0faf9'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].type == 'esport'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[1].color == '#4e06ff'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url api_news_host + '/api/news/' + articleId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header authorization = 'Bearer ' + access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request editEsportsPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.082</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>16:00:26.017 request:
+4 &gt; PUT https://api-news.priotix.xyz/api/news/11686
+4 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 245
+4 &gt; Host: api-news.priotix.xyz
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;tags&quot;:[{&quot;resourceId&quot;:&quot;5ebd631a224ed80010a0fafa&quot;,&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;tags\/f8cc985f506301d5d46d1909b70e783d\/0e7a8f63566145fc994bd0c379d33073\/original.png&quot;}},&quot;color&quot;:&quot;#982b2b&quot;,&quot;name&quot;:&quot;LoL&quot;,&quot;channel&quot;:&quot;winnersnet&quot;,&quot;type&quot;:&quot;esport&quot;}]}
+
+16:00:26.097 response time in milliseconds: 79
+4 &lt; 200
+4 &lt; Server: nginx
+4 &lt; Date: Thu, 03 Jun 2021 12:00:26 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Content-Length: 642
+4 &lt; Connection: keep-alive
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+4 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+4 &lt; X-Response-Time: 31ms
+4 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+4 &lt; X-Frame-Options: SAMEORIGIN
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11686,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:00:25.791Z&quot;,&quot;id&quot;:&quot;60b8c4596ce2cf0010afcb2d&quot;,&quot;title&quot;:&quot;article_title_api_test1622721625675&quot;,&quot;updated&quot;:&quot;2021-06-03T12:00:26.090Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[6],&quot;ampContent&quot;:&quot;60b8c4596ce2cf0010afcb2c&quot;,&quot;tags&quot;:[{&quot;images&quot;:{&quot;default&quot;:{&quot;filePath&quot;:&quot;tags\/f8cc985f506301d5d46d1909b70e783d\/0e7a8f63566145fc994bd0c379d33073\/original.png&quot;}},&quot;resourceId&quot;:&quot;5ebd631a224ed80010a0fafa&quot;,&quot;color&quot;:&quot;#982b2b&quot;,&quot;channel&quot;:&quot;winnersnet&quot;,&quot;name&quot;:&quot;LoL&quot;,&quot;type&quot;:&quot;esport&quot;}]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json jsonHeaders = responseHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>16:00:26.098 over-writing existing variable 'jsonHeaders' with new value: responseHeaders
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def securityHeaders = call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/helper/security-headers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>{
+  &quot;headers&quot;: {
+    &quot;Server&quot;: [
+      &quot;nginx&quot;
+    ],
+    &quot;Date&quot;: [
+      &quot;Thu, 03 Jun 2021 12:00:26 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;642&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Methods&quot;: [
+      &quot;GET, POST, DELETE, PUT&quot;
+    ],
+    &quot;Access-Control-Allow-Headers&quot;: [
+      &quot;Origin, Accept, X-Requested-With, Content-Type, Authorization&quot;
+    ],
+    &quot;X-Response-Time&quot;: [
+      &quot;31ms&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=63072000; includeSubdomains; preload&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-Xss-Protection&quot;: [
+      &quot;1; mode=block&quot;
+    ]
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json responseHeaders = { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>16:00:26.099 over-writing existing variable 'securityHeaders' with new value: call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }
+16:00:26.110 over-writing existing variable 'responseHeaders' with new value: { headers: '#(jsonHeaders)' }
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Response-Time == '#array'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].images.default.filePath == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].channel == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].name == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].resourceId == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].type == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].color == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].images.default.filePath == 'tags/f8cc985f506301d5d46d1909b70e783d/0e7a8f63566145fc994bd0c379d33073/original.png'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].channel == 'winnersnet'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].name == 'LoL'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].resourceId == '5ebd631a224ed80010a0fafa'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags[0].type == 'esport'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url api_news_host + '/api/news/' + articleId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header authorization = 'Bearer ' + access_token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">request deleteEsportsPayload</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.047</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>16:00:26.122 request:
+5 &gt; PUT https://api-news.priotix.xyz/api/news/11686
+5 &gt; authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJnZW5lcmFsIiwidXNlciI6eyJlbWFpbCI6InpldXNAd2luZXNwb3J0cy5jb20iLCJjcmVhdGVkIjoiMjAyMC0wOS0wM1QwODoxNDo0Mi4zMjhaIiwidXBkYXRlZCI6IjIwMjAtMDQtMDJUMTQ6MTk6MjYuNTk3WiIsImNsaWVudElkIjoic3hLU3RPdzB1RnJDb2ZJdlVXTXgifSwiY29udGV4dCI6eyJ1c2VySWQiOiI1ZTU5MmExZWM5Y2VkOTFmOGQ0ZGM2ZTMifSwiaWF0IjoxNjIyNzIxNjI0LCJleHAiOjE2MjI3MjIyMjR9.9j97zQtwLEcG2fZ0AvfJ2fYs1lzFpGg9y0O2VdNCzdc
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 11
+5 &gt; Host: api-news.priotix.xyz
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;tags&quot;:[]}
+
+16:00:26.167 response time in milliseconds: 45
+5 &lt; 200
+5 &lt; Server: nginx
+5 &lt; Date: Thu, 03 Jun 2021 12:00:26 GMT
+5 &lt; Content-Type: application/json; charset=utf-8
+5 &lt; Content-Length: 411
+5 &lt; Connection: keep-alive
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+5 &lt; Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type, Authorization
+5 &lt; X-Response-Time: 25ms
+5 &lt; Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+5 &lt; X-Frame-Options: SAMEORIGIN
+5 &lt; X-Content-Type-Options: nosniff
+5 &lt; X-Xss-Protection: 1; mode=block
+{&quot;newsId&quot;:11686,&quot;deleted&quot;:false,&quot;subtext&quot;:&quot;subtext-test&quot;,&quot;author&quot;:{&quot;firstName&quot;:&quot;Zeus&quot;,&quot;lastName&quot;:&quot;&Pi;&omicron;&rho;&tau;&omicron;&kappa;&#940;&lambda;&iota;&quot;,&quot;id&quot;:&quot;5e592a1ec9ced91f8d4dc6e3&quot;,&quot;email&quot;:&quot;zeus@winesports.com&quot;},&quot;created&quot;:&quot;2021-06-03T12:00:25.791Z&quot;,&quot;id&quot;:&quot;60b8c4596ce2cf0010afcb2d&quot;,&quot;title&quot;:&quot;article_title_api_test1622721625675&quot;,&quot;updated&quot;:&quot;2021-06-03T12:00:26.166Z&quot;,&quot;content&quot;:&quot;&quot;,&quot;products&quot;:[6],&quot;ampContent&quot;:&quot;60b8c4596ce2cf0010afcb2c&quot;,&quot;tags&quot;:[]}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">json jsonHeaders = responseHeaders</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>16:00:26.168 over-writing existing variable 'jsonHeaders' with new value: responseHeaders
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def securityHeaders = call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">src/test/java/helper/security-headers.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>{
+  &quot;headers&quot;: {
+    &quot;Server&quot;: [
+      &quot;nginx&quot;
+    ],
+    &quot;Date&quot;: [
+      &quot;Thu, 03 Jun 2021 12:00:26 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json; charset=utf-8&quot;
+    ],
+    &quot;Content-Length&quot;: [
+      &quot;411&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Methods&quot;: [
+      &quot;GET, POST, DELETE, PUT&quot;
+    ],
+    &quot;Access-Control-Allow-Headers&quot;: [
+      &quot;Origin, Accept, X-Requested-With, Content-Type, Authorization&quot;
+    ],
+    &quot;X-Response-Time&quot;: [
+      &quot;25ms&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=63072000; includeSubdomains; preload&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-Xss-Protection&quot;: [
+      &quot;1; mode=block&quot;
+    ]
+  }
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">json responseHeaders = { headers: '#(jsonHeaders)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>16:00:26.168 over-writing existing variable 'securityHeaders' with new value: call read('file:src/test/java/helper/security-headers.feature') { headers: '#(jsonHeaders)' }
+16:00:26.181 over-writing existing variable 'responseHeaders' with new value: { headers: '#(jsonHeaders)' }
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Response-Time == '#array'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.Strict-Transport-Security == [&quot;max-age=63072000; includeSubdomains; preload&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Frame-Options == [&quot;SAMEORIGIN&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Content-Type-Options == [&quot;nosniff&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">match responseHeaders.headers.X-Xss-Protection == [&quot;1; mode=block&quot;]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags == '#[0]'</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response.tags == []</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

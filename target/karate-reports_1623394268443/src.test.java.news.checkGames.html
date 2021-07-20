@@ -1,0 +1,2952 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.news.checkGames</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-06-11 10:50:47 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:21]"><span>[1:21]</span> <span>1. Create Article, 2. Add Games, 3. Edit Games, 4. Delete Games, 5. Delete Created Article</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/news/checkGames.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Check Games Functionality</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:21]</span>
+                <span class="scenario-name">1. Create Article, 2. Add Games, 3. Edit Games, 4. Delete Games, 5. Delete Created Article</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>30007</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def currentTimeStamp = function() { return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>def payload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function(actionName) {
+  var dbUtils = Java.type(&#39;utils.DbUtils&#39;);
+  var payload = new dbUtils();
+  return payload.getPayload(actionName);
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>def createArticlePayload = call payload &#39;create-article&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">30006</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">10:50:47.746 src/test/java/news/checkGames.feature:15
+Given def createArticlePayload = call payload &#39;create-article&#39;
+&gt;&gt;&gt;&gt; js failed:
+01: function(actionName) {
+02:   var dbUtils = Java.type(&#39;utils.DbUtils&#39;);
+03:   var payload = new dbUtils();
+04:   return payload.getPayload(actionName);
+05: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=api-test-db:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketException: api-test-db}, caused by {java.net.UnknownHostException: api-test-db}}]
+- com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:182)
+- com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+- com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:150)
+- com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:102)
+- com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:282)
+- com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:186)
+- com.mongodb.client.internal.FindIterableImpl.first(FindIterableImpl.java:211)
+
+src/test/java/news/checkGames.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def addGamesPayload = call payload &#39;add-games&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def editGamesPayload = call payload &#39;edit-games&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def emptyGamesPayload = call payload &#39;empty-tags&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Create Article</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def userInfo = call read(&#39;file:src/test/java/helper/get-user-info.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def articleName = &#39;article_title_api_test&#39; + currentTimeStamp()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>set createArticlePayload.title = articleName</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>request createArticlePayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref skipped">31</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref skipped">32</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref skipped">33</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>def articleId = response.newsId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref skipped">37</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Add Games</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref skipped">42</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref skipped">43</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref skipped">44</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>request addGamesPayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref skipped">45</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref skipped">46</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref skipped">50</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref skipped">51</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Types</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref skipped">55</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref skipped">56</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref skipped">57</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref skipped">58</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref skipped">59</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref skipped">60</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref skipped">61</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref skipped">63</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref skipped">64</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref skipped">68</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Values</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;static/imgs/games/dota2/dota2-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.75">
+      <div class="step-ref skipped">75</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;Dota 2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.76">
+      <div class="step-ref skipped">76</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;Dota 2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref skipped">77</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref skipped">78</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref skipped">79</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref skipped">81</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;static/imgs/games/cs/csgo-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref skipped">82</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref skipped">83</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;CS:GO&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref skipped">84</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;CS:GO&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref skipped">85</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref skipped">86</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == 5</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref skipped">87</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Edit Games</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref skipped">91</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref skipped">92</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref skipped">93</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>request editGamesPayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref skipped">94</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref skipped">95</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref skipped">99</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref skipped">100</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Types</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref skipped">104</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref skipped">105</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref skipped">106</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref skipped">107</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref skipped">108</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref skipped">109</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref skipped">110</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref skipped">112</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref skipped">113</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref skipped">114</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref skipped">115</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref skipped">116</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref skipped">117</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == &#39;#number&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.118">
+      <div class="step-ref skipped">118</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">## Assert Key Values</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref skipped">122</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].images.default.filePath == &#39;static/imgs/games/valorant/valorant-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref skipped">123</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref skipped">124</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].name == &#39;Valorant&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref skipped">125</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].shortName == &#39;Valorant&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref skipped">126</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].resourceId == &#39;103&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref skipped">127</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].gameId == 103</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref skipped">128</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[0].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref skipped">130</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].images.default.filePath == &#39;static/imgs/games/lol/lol-40px.jpg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref skipped">131</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].channel == &#39;wingg&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref skipped">132</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].name == &#39;LoL&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref skipped">133</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].shortName == &#39;LoL&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref skipped">134</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].resourceId == &#39;2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref skipped">135</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].gameId == 2.0</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref skipped">136</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags[1].type == &#39;game&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Delete Games</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref skipped">140</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url api_news_host + &#39;/api/news/&#39; + articleId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref skipped">141</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>header authorization = &#39;Bearer &#39; + access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref skipped">142</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>request emptyGamesPayload</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref skipped">143</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method put</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref skipped">144</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Check Security Response Headers</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.148">
+      <div class="step-ref skipped">148</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>json jsonHeaders = responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref skipped">149</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def securityHeaders = call read(&#39;file:src/test/java/helper/security-headers.feature&#39;) { headers: &#39;#(jsonHeaders)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Assert Key Type</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref skipped">153</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags == &#39;#[0]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#   Assert Key Value</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.157">
+      <div class="step-ref skipped">157</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>match response.tags == []</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">##  Delete Created Article</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.162">
+      <div class="step-ref skipped">162</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def id = {id: &#39;#(articleId)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.163">
+      <div class="step-ref skipped">163</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def deleteArticle = call read(&#39;file:src/test/java/helper/delete-news.feature&#39;) id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
